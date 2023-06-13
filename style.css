@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Andale Mono, monospace, sans-serif;
+}
+
+body{
+    background-image: url(assets/img/Fondo.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#body2{
+    background-image: url(https://files.cults3d.com/uploaders/21731034/illustration-file/334733e7-390a-4b59-9675-482e1e881261/EB4CDB0B-786B-4169-8993-B0A90CB2006D.png);
+    background-size: cover;
+}
+
+header{
+    background-image: url(assets/img/Banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20vh;
+    border-radius:8px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    margin-right: 20px;
+    margin-top: 95px;
+    align-self: end;
+    z-index: 1;
+}
+
+a {
+    font-size: 17px;
+    color: white;
+    background-color: rgb(69, 69, 206);
+    background-size: 500px 200px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px rgb(103, 101, 101);
+    padding: 7px;
+    text-decoration: none;
+}
+
+a[href="#"]{
+    background-color: rgb(85, 197, 85);
+}
+
+h1 {
+    color: black;
+    filter: drop-shadow(4px 4px 4px #ffffff);
+    font-size: 50px;
+    margin: 30px 0px 0px 80px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    align-self: center;
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+article{
+    width:50vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: justify;
+}
+
+h3{
+    margin-top: 40px;
+    color: rgb(21, 21, 126);
+    background: rgb(109, 148, 109);
+    width: 100%;
+    height: 25%;
+    text-shadow: 1px 1px 2px rgb(105, 105, 117);
+    border-radius: 5px;
+}
+
+p{
+    margin: 50px 0px 15px 20px;
+    line-height: 1;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+li::marker{
+    color: rgb(27, 27, 112);
+    font-weight: bold;
+}
+
+ul > li{
+    list-style-position: inside;
+    list-style-type: square;
+    margin: 20px 0px 20px 20px;
+    color: white;
+}
+
+.card {
+  height: 75%;
+  width: 70%;
+  margin-left: 150px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4{
+    align-self: center;
+    color: white;
+    background-color: rgb(12, 81, 12);
+    height: 35px;
+    width: 80%;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+img{
+    height: 75%;
+    width: 75%;
+}
+
+
+@media screen and (max-width: 512px) {
+
+    header, section, h2, article, h3, h4, p, body, #body2{
+        width: auto;
+        background-image: auto;
+    }
+
+    nav{
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .card{
+        margin-left: auto;
+        width: auto;
+    }
+
+    img{
+        width: auto;
+    }
+}
